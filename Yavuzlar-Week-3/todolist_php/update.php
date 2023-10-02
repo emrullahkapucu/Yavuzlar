@@ -15,9 +15,8 @@ if (isset($_POST['todo_form'])) {
   $SORGU->bindParam(':todo_form',  $todo);
 
   $SORGU->bindParam(':id',    $id);
-
-
   $SORGU->execute();
+
   echo "TODO güncellendi";
   header("location: index.php");
   die();
